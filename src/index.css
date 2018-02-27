@@ -1,5 +1,19 @@
+/*--------------------------------------------------------------
+CSS Reset
+--------------------------------------------------------------*/
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust:     100%;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
 }

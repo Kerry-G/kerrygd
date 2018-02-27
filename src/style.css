@@ -1,0 +1,100 @@
+/*------------------------------------
+fonts
+--------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3 {
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 1em 0; }
+
+p {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 1em 0; }
+
+/*------------------------------------
+style
+--------------------------------------*/
+.App-title {
+  text-align: center;
+  background-color: #F6E497;
+  color: #4C1B1B; }
+
+/*------------------------------------
+Header
+--------------------------------------*/
+.App-header {
+  padding: 2em;
+  background: #4C1B1B;
+  text-align: center; }
+
+.App-header img {
+  width: 180px;
+  margin: 0 auto;
+  border-radius: 50%; }
+
+.App-header .full-name {
+  color: #F6E497;
+  font-size: 1.5em;
+  padding: 0.5em 0.5em 0; }
+
+.App-header .description {
+  color: #BD8D46;
+  font-size: 0.9em;
+  padding: 0; }
+
+/*------------------------------------
+Content
+--------------------------------------*/
+.App-content {
+  padding: 1em; }
+
+/*------------------------------------
+Sidebar
+--------------------------------------*/
+.App-sidebar {
+  background-color: #4C1B1B;
+  display: flex;
+  flex-direction: column; }
+
+.App-sidebar a {
+  padding: 1em;
+  font-weight: bold; }
+
+#About {
+  background-color: #BD8D46; }
+
+#Experience {
+  background-color: #FCFAE1; }
+
+#Skills {
+  background-color: #B9121B;
+  color: #FCFAE1; }
+
+#Project {
+  background-color: #F6E497; }
+
+/*------------------------------------
+Footer
+--------------------------------------*/
+.App-footer {
+  background-color: #4C1B1B;
+  color: #FCFAE1;
+  padding-top: 0;
+  padding-right: 2em;
+  padding-left: 2em;
+  padding-bottom: 1em; }
+
+.App-footer div {
+  font-size: 0.9em; }

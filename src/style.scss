@@ -1,0 +1,118 @@
+/*------------------------------------
+fonts
+--------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+    color: #404040;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 1em 0;
+}
+
+
+
+/*------------------------------------
+style
+--------------------------------------*/
+$red:#B9121B;
+$dark-red: #4C1B1B;
+$beige: #F6E497;
+$offwhite: #FCFAE1;
+$darkerbeige: #BD8D46;
+
+.App-title{
+    text-align: center;
+    background-color:$beige;
+    color:$dark-red;
+}
+
+/*------------------------------------
+Header
+--------------------------------------*/
+.App-header {
+    padding: 2em;
+    background: $dark-red;
+    text-align: center;
+}
+.App-header img {
+    width: 180px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.App-header .full-name{
+    color: $beige;
+    font-size: 1.5em;
+    padding: 0.5em 0.5em 0;
+}
+.App-header .description{
+    color: $darkerbeige;
+    font-size: 0.9em;
+    padding: 0;
+}
+/*------------------------------------
+Content
+--------------------------------------*/
+.App-content{
+    padding: 1em;
+}
+/*------------------------------------
+Sidebar
+--------------------------------------*/
+.App-sidebar{
+    background-color: $dark-red ;
+    display: flex;
+    flex-direction: column;
+}
+.App-sidebar a{
+    padding: 1em;
+    font-weight: bold;
+}
+
+#About {
+    background-color: $darkerbeige;
+}
+
+#Experience {
+    background-color: $offwhite;
+}
+
+#Skills{
+    background-color: $red;
+    color:$offwhite
+}
+
+#Project{
+    background-color: $beige;
+}
+/*------------------------------------
+Footer
+--------------------------------------*/
+.App-footer{
+    background-color: $dark-red ;
+    color: $offwhite;
+    padding-top: 0;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+
+.App-footer div{
+    font-size: 0.9em;
+}
