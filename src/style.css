@@ -29,13 +29,14 @@ style
 .App-title {
   text-align: center;
   background-color: #F6E497;
-  color: #4C1B1B; }
+  color: #4C1B1B;
+  padding: 0.5em; }
 
 /*------------------------------------
 Header
 --------------------------------------*/
 .App-header {
-  padding: 2em;
+  padding: 1.5em;
   background: #4C1B1B;
   text-align: center; }
 
@@ -58,7 +59,14 @@ Header
 Content
 --------------------------------------*/
 .App-content {
-  padding: 1em; }
+  padding: 2em;
+  animation: fadein 1s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 /*------------------------------------
 Sidebar
@@ -70,7 +78,13 @@ Sidebar
 
 .App-sidebar a {
   padding: 1em;
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
+  .App-sidebar a:hover {
+    border-right: #4C1B1B 2em solid;
+    transition: all 0.5s; }
+  .App-sidebar a.active {
+    border-right: #4C1B1B 2em solid; }
 
 #About {
   background-color: #BD8D46; }

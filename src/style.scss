@@ -41,13 +41,14 @@ $darkerbeige: #BD8D46;
     text-align: center;
     background-color:$beige;
     color:$dark-red;
+    padding:0.5em;
 }
 
 /*------------------------------------
 Header
 --------------------------------------*/
 .App-header {
-    padding: 2em;
+    padding: 1.5em;
     background: $dark-red;
     text-align: center;
 }
@@ -70,7 +71,12 @@ Header
 Content
 --------------------------------------*/
 .App-content{
-    padding: 1em;
+    padding: 2em;
+    animation: fadein 1s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 /*------------------------------------
 Sidebar
@@ -83,7 +89,16 @@ Sidebar
 .App-sidebar a{
     padding: 1em;
     font-weight: bold;
+    cursor: pointer;
+    &:hover{
+        border-right: $dark-red 2em solid;
+        transition: all 0.5s;
+    }
+    &.active{
+        border-right: $dark-red 2em solid;
+    }
 }
+
 
 #About {
     background-color: $darkerbeige;
@@ -101,6 +116,7 @@ Sidebar
 #Project{
     background-color: $beige;
 }
+
 /*------------------------------------
 Footer
 --------------------------------------*/
@@ -116,3 +132,4 @@ Footer
 .App-footer div{
     font-size: 0.9em;
 }
+
