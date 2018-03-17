@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import About from "./content/About";
-import Experience from "./content/Experience";
-import Skills from "./content/Skills";
-import Projects from "./content/Projects";
+import About                from "./content/About";
+import Experience           from "./content/Experience";
+import Skills               from "./content/Skills";
+import Projects             from "./content/Project/Projects";
 
 class Content extends Component {
 

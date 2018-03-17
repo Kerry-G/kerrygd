@@ -28,16 +28,20 @@ style
 --------------------------------------*/
 .App-title {
   text-align: center;
-  background-color: #F6E497;
-  color: #4C1B1B;
+  background-color: #C4D7ED;
+  color: #183152;
   padding: 0.5em; }
+
+a {
+  text-decoration: none;
+  color: black; }
 
 /*------------------------------------
 Header
 --------------------------------------*/
 .App-header {
   padding: 1.5em;
-  background: #4C1B1B;
+  background: #183152;
   text-align: center; }
 
 .App-header img {
@@ -46,12 +50,12 @@ Header
   border-radius: 50%; }
 
 .App-header .full-name {
-  color: #F6E497;
+  color: #C4D7ED;
   font-size: 1.5em;
   padding: 0.5em 0.5em 0; }
 
 .App-header .description {
-  color: #BD8D46;
+  color: #ABC8E2;
   font-size: 0.9em;
   padding: 0; }
 
@@ -68,22 +72,38 @@ Content
   to {
     opacity: 1; } }
 
-#skill-logo-set {
+.skill-logo-set {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   align-content: flex-start; }
 
-#skill-logo-set img {
+.skill-logo-set a img {
   padding: 25px;
   width: 100px; }
+
+.project {
+  margin-bottom: 40px;
+  overflow: auto; }
+
+.project h4 {
+  margin: 0px;
+  padding: 0px; }
+
+.project img {
+  float: left;
+  margin: 0 15px 0 0;
+  width: 100px; }
+
+.project p {
+  font-size: 12px; }
 
 /*------------------------------------
 Sidebar
 --------------------------------------*/
 .App-sidebar {
-  background-color: #4C1B1B;
+  background-color: #183152;
   display: flex;
   flex-direction: column; }
 
@@ -92,30 +112,30 @@ Sidebar
   font-weight: bold;
   cursor: pointer; }
   .App-sidebar a:hover {
-    border-right: #4C1B1B 2em solid;
+    border-right: #183152 2em solid;
     transition: all 0.5s; }
   .App-sidebar a.active {
-    border-right: #4C1B1B 2em solid; }
+    border-right: #183152 2em solid; }
 
 #About {
-  background-color: #BD8D46; }
+  background-color: #ABC8E2; }
 
 #Experience {
-  background-color: #FCFAE1; }
+  background-color: #E1E6FA; }
 
 #Skills {
-  background-color: #B9121B;
-  color: #FCFAE1; }
+  background-color: #375D81;
+  color: #E1E6FA; }
 
 #Project {
-  background-color: #F6E497; }
+  background-color: #C4D7ED; }
 
 /*------------------------------------
 Footer
 --------------------------------------*/
 .App-footer {
-  background-color: #4C1B1B;
-  color: #FCFAE1;
+  background-color: #183152;
+  color: #E1E6FA;
   padding-top: 0;
   padding-right: 2em;
   padding-left: 2em;
@@ -123,3 +143,10 @@ Footer
 
 .App-footer div {
   font-size: 0.9em; }
+
+.social-media a {
+  display: block;
+  color: #E1E6FA;
+  cursor: pointer; }
+  .social-media a:hover {
+    color: #C4D7ED; }

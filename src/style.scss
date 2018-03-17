@@ -31,11 +31,26 @@ p {
 /*------------------------------------
 style
 --------------------------------------*/
-$red:#B9121B;
-$dark-red: #4C1B1B;
-$beige: #F6E497;
-$offwhite: #FCFAE1;
-$darkerbeige: #BD8D46;
+//CHEESECAKE THEME//
+//$dark-red: #4C1B1B;
+//$red:#B9121B;
+//$darkerbeige: #BD8D46;
+//$beige: #F6E497;
+//$offwhite: #FCFAE1;
+
+//BLUE THEME//
+$dark-red: #183152;
+$red: #375D81;
+$darkerbeige: #ABC8E2;
+$beige: #C4D7ED;
+$offwhite: #E1E6FA;
+
+// TRY //
+//$dark-red: #;
+//$red: #375D81;
+//$darkerbeige: #ABC8E2;
+//$beige: #C4D7ED;
+//$offwhite: #E1E6FA;
 
 .App-title{
     text-align: center;
@@ -44,6 +59,10 @@ $darkerbeige: #BD8D46;
     padding:0.5em;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 /*------------------------------------
 Header
 --------------------------------------*/
@@ -78,7 +97,8 @@ Content
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-#skill-logo-set{
+
+.skill-logo-set{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -86,10 +106,28 @@ Content
     align-content: flex-start;
 }
 
-#skill-logo-set img{
+.skill-logo-set a img{
     padding:25px;
     width:100px;
 }
+.project{
+    margin-bottom: 40px;
+    overflow: auto;
+}
+.project h4{
+    margin:0px;
+    padding:0px;
+}
+.project img{
+    float: left;
+    margin: 0 15px 0 0;
+    width: 100px;
+}
+.project p{
+    font-size: 12px;
+}
+
+
 /*------------------------------------
 Sidebar
 --------------------------------------*/
@@ -143,5 +181,14 @@ Footer
 
 .App-footer div{
     font-size: 0.9em;
+}
+
+.social-media a {
+    display: block;
+    color: $offwhite;
+    cursor: pointer;
+    &:hover{
+        color: $beige;
+    }
 }
 
