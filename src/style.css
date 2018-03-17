@@ -68,6 +68,17 @@ Content
   to {
     opacity: 1; } }
 
+#skill-logo-set {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start; }
+
+#skill-logo-set img {
+  padding: 25px;
+  width: 100px; }
+
 /*------------------------------------
 Sidebar
 --------------------------------------*/
