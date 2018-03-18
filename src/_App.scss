@@ -15,7 +15,7 @@ CSS Grid
 --------------------------------------------------------------*/
 
 @supports (display: grid) {
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: $tablet) {
 
     .App {
       display: grid;
@@ -50,7 +50,7 @@ CSS Grid
 
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     .App {
       grid-template-columns: 2fr 1fr 1fr;
       grid-template-areas:

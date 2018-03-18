@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './_App.scss';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PageTitle from "./components/PageTitle";
@@ -9,7 +9,7 @@ import Content from "./components/Content"
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = ({content: 0})
+    this.state = ({content: 3})
   }
 
   render() {
