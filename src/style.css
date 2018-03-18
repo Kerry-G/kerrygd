@@ -63,8 +63,8 @@ style
 --------------------------------------*/
 .App-title {
   text-align: center;
-  background-color: #C4D7ED;
-  color: #183152;
+  background-color: #F6E497;
+  color: #4C1B1B;
   padding: 0.5em; }
 
 a {
@@ -76,7 +76,7 @@ Header
 --------------------------------------*/
 .App-header {
   padding: 1.5em;
-  background: #183152;
+  background: #4C1B1B;
   text-align: center; }
 
 .App-header img {
@@ -85,12 +85,12 @@ Header
   border-radius: 50%; }
 
 .App-header .full-name {
-  color: #C4D7ED;
+  color: #F6E497;
   font-size: 1.5em;
   padding: 0.5em 0.5em 0; }
 
 .App-header .description {
-  color: #ABC8E2;
+  color: #BD8D46;
   font-size: 0.9em;
   padding: 0; }
 
@@ -112,11 +112,15 @@ Content
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  align-content: flex-start; }
+  align-content: flex-start;
+  justify-content: space-between; }
 
 .skill-logo-set a img {
   padding: 25px;
-  width: 100px; }
+  width: 100px;
+  transition: all 0.2s ease-in; }
+  .skill-logo-set a img:hover {
+    transform: scale(1.2); }
 
 .project {
   margin-bottom: 20px; }
@@ -132,6 +136,7 @@ Content
     text-align: justify; }
 
 .project h4 {
+  font-size: 20px;
   margin: 0px 0px 15px;
   padding: 0px; }
 
@@ -143,45 +148,46 @@ Content
       width: 100px; } }
 
 .project p {
-  font-size: 12px; }
+  font-size: 14px; }
 
 /*------------------------------------
 Sidebar
 --------------------------------------*/
 .App-sidebar {
-  background-color: #183152;
+  background-color: #4C1B1B;
   display: flex;
   flex-direction: column; }
 
 .App-sidebar a {
   padding: 1em;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.2s;
+  border-right: #4C1B1B 0 solid; }
   .App-sidebar a:hover {
-    border-right: #183152 2em solid;
-    transition: all 0.5s; }
+    border-right: #4C1B1B 2em solid; }
   .App-sidebar a.active {
-    border-right: #183152 2em solid; }
+    border-right: #4C1B1B 2em solid; }
 
 #About {
-  background-color: #ABC8E2; }
+  background-color: #BD8D46; }
 
 #Experience {
-  background-color: #E1E6FA; }
+  background-color: #FCFAE1; }
 
 #Skills {
-  background-color: #375D81;
-  color: #E1E6FA; }
+  background-color: #B9121B;
+  color: #FCFAE1; }
 
 #Project {
-  background-color: #C4D7ED; }
+  background-color: #F6E497; }
 
 /*------------------------------------
 Footer
 --------------------------------------*/
 .App-footer {
-  background-color: #183152;
-  color: #E1E6FA;
+  background-color: #4C1B1B;
+  color: #FCFAE1;
   padding-top: 0;
   padding-right: 2em;
   padding-left: 2em;
@@ -192,7 +198,7 @@ Footer
 
 .social-media a {
   display: block;
-  color: #E1E6FA;
+  color: #FCFAE1;
   cursor: pointer; }
   .social-media a:hover {
-    color: #C4D7ED; }
+    color: #F6E497; }

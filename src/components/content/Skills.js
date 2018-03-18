@@ -32,10 +32,10 @@ const Skills  = () => (
             <a href="https://travis-ci.org" target="_blank" rel="noopener noreferrer"> <img src={travis} alt="Travis"/></a>
             <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer"> <img src={firebase} alt="Firebase"/></a>
             <a href="https://www.digitalocean.com" target="_blank" rel="noopener noreferrer"> <img src={digitalOcean} alt="Digital Ocean"/></a>
-            <a href="sass-lang.com" target="_blank" rel="noopener noreferrer"> <img src={sass} alt="Sass"/></a>
+            <a href="http://sass-lang.com" target="_blank" rel="noopener noreferrer"> <img src={sass} alt="Sass"/></a>
             <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer"> <img src={git} alt="Git"/></a>
-            <a href="flask.pocoo.org" target="_blank" rel="noopener noreferrer"> <img src={flask} alt="Flask"/></a>
-            <a href="nginx.org" target="_blank" rel="noopener noreferrer"> <img src={nginx} alt="nginx"/></a>
+            <a href="http://flask.pocoo.org" target="_blank" rel="noopener noreferrer"> <img src={flask} alt="Flask"/></a>
+            <a href="http://nginx.org" target="_blank" rel="noopener noreferrer"> <img src={nginx} alt="nginx"/></a>
         </div>
     </div>
 );
