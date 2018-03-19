@@ -1,0 +1,269 @@
+@import "variables";
+@import "App";
+
+/*------------------------------------
+fonts
+--------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+    color: #404040;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 1em 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*------------------------------------
+style
+--------------------------------------*/
+
+.App-title{
+    text-align: center;
+    background-color:$beige;
+    color:$dark-red;
+    padding:0.5em;
+}
+/*------------------------------------
+Header
+--------------------------------------*/
+.App-header {
+    padding: 1.5em;
+    background: $dark-red;
+    text-align: center;
+    & img {
+        width: 180px;
+        margin: 0 auto;
+        border-radius: 50%;
+        transition: transform 5s ease-in-out;
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+    & .full-name {
+        text-align: center;
+        color: $beige;
+        font-size: 1.5em;
+        padding: 0.5em 0.5em 0;
+    }
+    & .description {
+        text-align: center;
+        color: $darkerbeige;
+        font-size: 0.9em;
+        padding: 0;
+    }
+}
+
+/*------------------------------------
+Content
+--------------------------------------*/
+.App-content{
+    padding: 1em;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.about{
+    & p{
+        font-size:14px;
+    }
+}
+
+.skill-logo-set{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+.skill-logo-set a img{
+    padding:25px;
+    width:100px;
+    transition: all 0.2s ease-in;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.experience{
+    margin-bottom: 24px;
+    & p{
+        font-size: 14px;
+        padding: 0;
+        
+    }
+    & img{
+        margin: 0;
+        height:54px;
+        width: auto;
+        margin: 0px 0px 10px;
+    }
+    & h4{
+        font-size: 20px;
+        margin:0;
+        padding:0;
+    }
+    & h5{
+        font-size:16px;
+        font-style:italic;
+        font-weight: lighter;
+        margin: 0px 0px 10px;
+    }
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: $tablet){
+        flex-direction:row-reverse;
+    }
+}
+
+.education{
+    margin-bottom: 24px;
+    & p{
+        font-size:14px;
+        padding:0;
+    }
+    & img{
+        margin: 0 10px 10px 0;
+        width: 100px;
+        border-radius: 50%;
+        @media (min-width: $tablet){
+            width: 50px;
+        }
+    }
+    & h4{
+        font-size: 20px;
+        margin:0;
+        padding:0;
+    }
+    & h5{
+        font-size:16px;
+        font-style:italic;
+        font-weight: lighter;
+        margin: 0px 0px 10px;
+    }
+}
+
+.project{
+    margin-bottom: 20px;
+    & p{
+        font-size:14px;
+        padding:0;
+    
+    }
+    & img{
+        margin: 0 15px 15px 0;
+        width:100%;
+        @media (min-width: $tablet){
+            width: 120px;
+        }
+    }
+    & h4{
+        font-size: 20px;
+        margin: 0px 0px 15px;
+        padding:0px;
+    }
+}
+
+.img-content{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $tablet){
+        flex-direction:row;
+    }
+}
+
+/*------------------------------------
+Sidebar
+--------------------------------------*/
+.App-sidebar{
+    background-color: $dark-red ;
+    display: flex;
+    flex-direction: column;
+    & a{
+        padding: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s;
+        border-right: $dark-red 0 solid;
+        &:hover{
+            border-right: $dark-red 2em solid;
+        }
+        &.active{
+            border-right: $dark-red 2em solid;
+        }
+    }
+}
+
+#About {
+    background-color: $darkerbeige;
+}
+
+#Experience {
+    background-color: $offwhite;
+}
+
+#Skills{
+    background-color: $red;
+    color:$offwhite
+}
+
+#Project{
+    background-color: $beige;
+}
+
+/*------------------------------------
+Footer
+--------------------------------------*/
+.App-footer{
+    background-color: $dark-red ;
+    color: $offwhite;
+    padding-top: 0;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    & div {
+        font-size: 0.9em;
+    }
+}
+
+.social-media a {
+    display: block;
+    color: $offwhite;
+    cursor: pointer;
+    &:hover{
+        color: $beige;
+    }
+}
