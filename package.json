@@ -2,7 +2,7 @@
   "name": "kerrygd",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://kerrygd.com/",
+  "homepage": "https://kerry-g.github.io/kerrygd/",
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
     "react": "^16.2.0",
