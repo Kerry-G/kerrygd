@@ -56,7 +56,13 @@ h3 {
 p {
   font-family: 'Roboto Mono', monospace;
   margin: 0;
-  padding: 1em 0; }
+  padding: 1em 0;
+  text-align: justify;
+  text-justify: inter-word; }
+
+a {
+  text-decoration: none;
+  color: black; }
 
 /*------------------------------------
 style
@@ -67,10 +73,6 @@ style
   color: #4C1B1B;
   padding: 0.5em; }
 
-a {
-  text-decoration: none;
-  color: black; }
-
 /*------------------------------------
 Header
 --------------------------------------*/
@@ -78,24 +80,23 @@ Header
   padding: 1.5em;
   background: #4C1B1B;
   text-align: center; }
-
-.App-header img {
-  width: 180px;
-  margin: 0 auto;
-  border-radius: 50%;
-  transition: transform 5s ease-in-out; }
-  .App-header img:hover {
-    transform: rotate(360deg); }
-
-.App-header .full-name {
-  color: #F6E497;
-  font-size: 1.5em;
-  padding: 0.5em 0.5em 0; }
-
-.App-header .description {
-  color: #BD8D46;
-  font-size: 0.9em;
-  padding: 0; }
+  .App-header img {
+    width: 180px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: transform 5s ease-in-out; }
+    .App-header img:hover {
+      transform: rotate(360deg); }
+  .App-header .full-name {
+    text-align: center;
+    color: #F6E497;
+    font-size: 1.5em;
+    padding: 0.5em 0.5em 0; }
+  .App-header .description {
+    text-align: center;
+    color: #BD8D46;
+    font-size: 0.9em;
+    padding: 0; }
 
 /*------------------------------------
 Content
@@ -109,6 +110,9 @@ Content
     opacity: 0; }
   to {
     opacity: 1; } }
+
+.about p {
+  font-size: 14px; }
 
 .skill-logo-set {
   display: flex;
@@ -132,9 +136,9 @@ Content
     padding: 0; }
   .experience img {
     margin: 0;
-    height: 64px;
+    height: 54px;
     width: auto;
-    margin: 0 10px 10px 0; }
+    margin: 0px 0px 10px; }
   .experience h4 {
     font-size: 20px;
     margin: 0;
@@ -205,17 +209,16 @@ Sidebar
   background-color: #4C1B1B;
   display: flex;
   flex-direction: column; }
-
-.App-sidebar a {
-  padding: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s;
-  border-right: #4C1B1B 0 solid; }
-  .App-sidebar a:hover {
-    border-right: #4C1B1B 2em solid; }
-  .App-sidebar a.active {
-    border-right: #4C1B1B 2em solid; }
+  .App-sidebar a {
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-right: #4C1B1B 0 solid; }
+    .App-sidebar a:hover {
+      border-right: #4C1B1B 2em solid; }
+    .App-sidebar a.active {
+      border-right: #4C1B1B 2em solid; }
 
 #About {
   background-color: #BD8D46; }
@@ -240,9 +243,8 @@ Footer
   padding-right: 2em;
   padding-left: 2em;
   padding-bottom: 1em; }
-
-.App-footer div {
-  font-size: 0.9em; }
+  .App-footer div {
+    font-size: 0.9em; }
 
 .social-media a {
   display: block;

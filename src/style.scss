@@ -27,8 +27,14 @@ p {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 1em 0;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
 
 /*------------------------------------
@@ -41,11 +47,6 @@ style
     color:$dark-red;
     padding:0.5em;
 }
-
-a{
-    text-decoration: none;
-    color: black;
-}
 /*------------------------------------
 Header
 --------------------------------------*/
@@ -53,26 +54,29 @@ Header
     padding: 1.5em;
     background: $dark-red;
     text-align: center;
-}
-.App-header img {
-    width: 180px;
-    margin: 0 auto;
-    border-radius: 50%;
-    transition: transform 5s ease-in-out;
-    &:hover{
-        transform: rotate(360deg);
+    & img {
+        width: 180px;
+        margin: 0 auto;
+        border-radius: 50%;
+        transition: transform 5s ease-in-out;
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+    & .full-name {
+        text-align: center;
+        color: $beige;
+        font-size: 1.5em;
+        padding: 0.5em 0.5em 0;
+    }
+    & .description {
+        text-align: center;
+        color: $darkerbeige;
+        font-size: 0.9em;
+        padding: 0;
     }
 }
-.App-header .full-name{
-    color: $beige;
-    font-size: 1.5em;
-    padding: 0.5em 0.5em 0;
-}
-.App-header .description{
-    color: $darkerbeige;
-    font-size: 0.9em;
-    padding: 0;
-}
+
 /*------------------------------------
 Content
 --------------------------------------*/
@@ -80,9 +84,16 @@ Content
     padding: 1em;
     animation: fadein 1s;
 }
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+.about{
+    & p{
+        font-size:14px;
+    }
 }
 
 .skill-logo-set{
@@ -108,12 +119,13 @@ Content
     & p{
         font-size: 14px;
         padding: 0;
+        
     }
     & img{
         margin: 0;
-        height:64px;
+        height:54px;
         width: auto;
-        margin: 0 10px 10px 0;
+        margin: 0px 0px 10px;
     }
     & h4{
         font-size: 20px;
@@ -193,9 +205,6 @@ Content
     }
 }
 
-
-
-
 /*------------------------------------
 Sidebar
 --------------------------------------*/
@@ -203,21 +212,20 @@ Sidebar
     background-color: $dark-red ;
     display: flex;
     flex-direction: column;
-}
-.App-sidebar a{
-    padding: 1em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.2s;
-    border-right: $dark-red 0 solid;
-    &:hover{
-        border-right: $dark-red 2em solid;
+    & a{
+        padding: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s;
+        border-right: $dark-red 0 solid;
+        &:hover{
+            border-right: $dark-red 2em solid;
+        }
+        &.active{
+            border-right: $dark-red 2em solid;
+        }
     }
-    &.active{
-        border-right: $dark-red 2em solid;
-    }
 }
-
 
 #About {
     background-color: $darkerbeige;
@@ -246,10 +254,9 @@ Footer
     padding-right: 2em;
     padding-left: 2em;
     padding-bottom: 1em;
-}
-
-.App-footer div{
-    font-size: 0.9em;
+    & div {
+        font-size: 0.9em;
+    }
 }
 
 .social-media a {
@@ -260,4 +267,3 @@ Footer
         color: $beige;
     }
 }
-
