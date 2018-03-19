@@ -58,6 +58,10 @@ Header
     width: 180px;
     margin: 0 auto;
     border-radius: 50%;
+    transition: transform 5s ease-in-out;
+    &:hover{
+        transform: rotate(360deg);
+    }
 }
 .App-header .full-name{
     color: $beige;
@@ -87,7 +91,7 @@ Content
     flex-wrap: wrap;
     align-items: center;
     align-content: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .skill-logo-set a img{
@@ -99,35 +103,97 @@ Content
     }
 }
 
+.experience{
+    margin-bottom: 24px;
+    & p{
+        font-size: 14px;
+        padding: 0;
+    }
+    & img{
+        margin: 0;
+        height:64px;
+        width: auto;
+        margin: 0 10px 10px 0;
+    }
+    & h4{
+        font-size: 20px;
+        margin:0;
+        padding:0;
+    }
+    & h5{
+        font-size:16px;
+        font-style:italic;
+        font-weight: lighter;
+        margin: 0px 0px 10px;
+    }
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: $tablet){
+        flex-direction:row-reverse;
+    }
+}
+
+.education{
+    margin-bottom: 24px;
+    & p{
+        font-size:14px;
+        padding:0;
+    }
+    & img{
+        margin: 0 10px 10px 0;
+        width: 100px;
+        border-radius: 50%;
+        @media (min-width: $tablet){
+            width: 50px;
+        }
+    }
+    & h4{
+        font-size: 20px;
+        margin:0;
+        padding:0;
+    }
+    & h5{
+        font-size:16px;
+        font-style:italic;
+        font-weight: lighter;
+        margin: 0px 0px 10px;
+    }
+}
+
 .project{
     margin-bottom: 20px;
+    & p{
+        font-size:14px;
+        padding:0;
+    
+    }
+    & img{
+        margin: 0 15px 15px 0;
+        width:100%;
+        @media (min-width: $tablet){
+            width: 120px;
+        }
+    }
+    & h4{
+        font-size: 20px;
+        margin: 0px 0px 15px;
+        padding:0px;
+    }
 }
-.project-content{
+
+.img-content{
     display: flex;
     flex-direction: column;
     @media (min-width: $tablet){
         flex-direction:row;
     }
-    & p{
-        padding:0;
-        text-align: justify;
-    }
 }
-.project h4{
-    font-size: 20px;
-    margin: 0px 0px 15px;
-    padding:0px;
-}
-.project img{
-    margin: 0 15px 15px 0;
-    width:100%;
-    @media (min-width: $tablet){
-        width: 100px;
-    }
-}
-.project p{
-    font-size: 14px;
-}
+
+
 
 
 /*------------------------------------

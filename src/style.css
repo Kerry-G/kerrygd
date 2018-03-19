@@ -82,7 +82,10 @@ Header
 .App-header img {
   width: 180px;
   margin: 0 auto;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: transform 5s ease-in-out; }
+  .App-header img:hover {
+    transform: rotate(360deg); }
 
 .App-header .full-name {
   color: #F6E497;
@@ -113,7 +116,7 @@ Content
   flex-wrap: wrap;
   align-items: center;
   align-content: flex-start;
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 .skill-logo-set a img {
   padding: 25px;
@@ -122,33 +125,78 @@ Content
   .skill-logo-set a img:hover {
     transform: scale(1.2); }
 
+.experience {
+  margin-bottom: 24px; }
+  .experience p {
+    font-size: 14px;
+    padding: 0; }
+  .experience img {
+    margin: 0;
+    height: 64px;
+    width: auto;
+    margin: 0 10px 10px 0; }
+  .experience h4 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0; }
+  .experience h5 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0px 0px 10px; }
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media (min-width: 641px) {
+    .experience-content {
+      flex-direction: row-reverse; } }
+
+.education {
+  margin-bottom: 24px; }
+  .education p {
+    font-size: 14px;
+    padding: 0; }
+  .education img {
+    margin: 0 10px 10px 0;
+    width: 100px;
+    border-radius: 50%; }
+    @media (min-width: 641px) {
+      .education img {
+        width: 50px; } }
+  .education h4 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0; }
+  .education h5 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0px 0px 10px; }
+
 .project {
   margin-bottom: 20px; }
+  .project p {
+    font-size: 14px;
+    padding: 0; }
+  .project img {
+    margin: 0 15px 15px 0;
+    width: 100%; }
+    @media (min-width: 641px) {
+      .project img {
+        width: 120px; } }
+  .project h4 {
+    font-size: 20px;
+    margin: 0px 0px 15px;
+    padding: 0px; }
 
-.project-content {
+.img-content {
   display: flex;
   flex-direction: column; }
   @media (min-width: 641px) {
-    .project-content {
+    .img-content {
       flex-direction: row; } }
-  .project-content p {
-    padding: 0;
-    text-align: justify; }
-
-.project h4 {
-  font-size: 20px;
-  margin: 0px 0px 15px;
-  padding: 0px; }
-
-.project img {
-  margin: 0 15px 15px 0;
-  width: 100%; }
-  @media (min-width: 641px) {
-    .project img {
-      width: 100px; } }
-
-.project p {
-  font-size: 14px; }
 
 /*------------------------------------
 Sidebar

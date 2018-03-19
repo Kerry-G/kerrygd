@@ -1,5 +1,5 @@
 import React from 'react';
-import face from '../assets/face.jpg'
+import face from '../assets/face.png'
 
 const Header  = () => (
     <header className="App-header">

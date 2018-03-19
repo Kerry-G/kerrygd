@@ -9,7 +9,7 @@ import Content from "./components/Content"
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = ({content: 3})
+    this.state = ({content: 1})
   }
 
   render() {
