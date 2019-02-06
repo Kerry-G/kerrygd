@@ -4,7 +4,7 @@ import React from 'react';
 const Education  = (props) => (
     <div className="education">
         <div className="img-content">
-            <a href={props.school.link} target="_blank">
+            <a href={props.school.link} target="_blank" rel="noopener noreferrer">
                 <img src={props.school.logo} alt={props.school.name}/>
             </a>
             <div>

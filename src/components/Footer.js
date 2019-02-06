@@ -12,6 +12,7 @@ const Footer  = () => (
                 <a href="https://www.facebook.com/KerryGougeon" alt="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
                 <a href="https://twitter.com/kerryGD" alt="Twitter" target="_blank" rel="noopener noreferrer">Twitter</a>
                 <a href="https://www.linkedin.com/in/kerry-gougeon-a8691937/" alt="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/Kerry-G" alt="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
     </footer>
 );

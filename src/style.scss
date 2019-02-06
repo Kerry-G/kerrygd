@@ -31,7 +31,7 @@ p {
     text-justify: inter-word;
 }
 
-a{
+a, button{
     text-decoration: none;
     color: black;
 }
@@ -42,6 +42,24 @@ html {
     font-familiy:sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+}
+
+button {
+    /* Resets */
+  color: #000;
+  border: 0px solid #000;
+  border-radius: 0;
+  background-color: transparent;
+  outline: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+  cursor: pointer;
 }
 
 body {
@@ -230,8 +248,9 @@ Sidebar
     background-color: $dark-red ;
     display: flex;
     flex-direction: column;
-    & a{
+    & a, button{
         padding: 1em;
+        text-align: left;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.2s;

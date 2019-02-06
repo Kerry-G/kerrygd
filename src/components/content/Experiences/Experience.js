@@ -4,7 +4,7 @@ import React from 'react';
 const Experience  = (props) => (
     <div className="experience">
         <div className="experience-content">
-            <a href={props.employer.link} target="_blank">
+            <a href={props.employer.link} target="_blank" rel="noopener noreferrer">
                 <img src={props.employer.logo} alt={props.employer.name}/>
             </a>
             <div>

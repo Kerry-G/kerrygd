@@ -5,11 +5,28 @@ import Education from './Education';
 
 import bell from './../../../assets/bell.png'
 import freezingraccoon from './../../../assets/freezingraccoon.png'
+import ericsson from './../../../assets/ericsson.png'
 
 import esg from './../../../assets/esg.jpg'
 import concordia from './../../../assets/concordia.jpg'
 
 const experience = [
+    {
+        id:0,
+        title: "Software developper intern",
+        employer: {
+            name:"Ericsson", 
+            logo: ericsson,
+            link:"https://www.ericsson.com/",
+        },
+        startingDate: "September 2018",
+        finishingDate: "April 2019",
+        content:
+            "I learned a lot during my internship @ Ericsson." +
+            " Within a team of four people, we modernized an internal tool " +
+            " using newer technologies like Java 8, Docker, Kubernetes, Reactjs. " + 
+            " It was an incredible experience."
+    },
     {
         id:1,
         title: "Dev Wizard",
@@ -19,7 +36,7 @@ const experience = [
             link:"https://www.theforgearena.com/",
         },
         startingDate: "May 2017",
-        finishingDate: "Present",
+        finishingDate: "September 2018",
         content:
             "My main role at Freezing Raccoon is to develop web applications for the studio." +
             " My responsibilities include building applications from the bottom" +

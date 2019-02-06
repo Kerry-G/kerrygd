@@ -5,9 +5,9 @@
   "homepage": "https://kerry-g.github.io/kerrygd/",
   "dependencies": {
     "node-sass": "^4.10.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "2.0.3"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-scripts": "^2.1.3"
   },
   "scripts": {
     "start": "react-scripts start",

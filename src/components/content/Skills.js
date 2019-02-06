@@ -14,6 +14,9 @@ import sass from './../../assets/sass.png'
 import travis from './../../assets/travis.png'
 import flask from './../../assets/flask.png'
 import nginx from './../../assets/nginx.png'
+import jest from './../../assets/jest.png'
+import ubuntu from './../../assets/ubuntu.png'
+import vs_code from './../../assets/vs_code.png'
 
 const Skills  = () => (
     <div className="App-content">
@@ -36,6 +39,9 @@ const Skills  = () => (
             <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer"> <img src={git} alt="Git"/></a>
             <a href="http://flask.pocoo.org" target="_blank" rel="noopener noreferrer"> <img src={flask} alt="Flask"/></a>
             <a href="http://nginx.org" target="_blank" rel="noopener noreferrer"> <img src={nginx} alt="nginx"/></a>
+            <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer"> <img src={jest} alt="Jest"/></a>
+            <a href="https://www.ubuntu.com/" target="_blank" rel="noopener noreferrer"> <img src={ubuntu} alt="Ubuntu"/></a>
+            <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"> <img src={vs_code} alt="Visual Studio Code"/></a>
         </div>
     </div>
 );
