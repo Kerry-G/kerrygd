@@ -2,7 +2,7 @@ import React from 'react';
 
 const PageTitle  = () => (
     <h1 className="App-title">
-        Software Engineer Student
+        Computer Games Student
     </h1>
 );
 

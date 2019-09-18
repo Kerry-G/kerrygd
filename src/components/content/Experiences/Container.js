@@ -75,11 +75,11 @@ const experienceItem = experience.map((experience) =>
 const education = [
     {
         id:1,
-        degree:"Software Engineering",
+        degree:"Computer Games",
         school: {
             name: "Concordia University",
             logo: concordia,
-            link: "http://www.concordia.ca/academics/undergraduate/software-engineering.html"
+            link: "http://www.concordia.ca/academics/undergraduate/computer-games.html"
         },
         startingDate: "2016",
         finishingDate: "Present",
