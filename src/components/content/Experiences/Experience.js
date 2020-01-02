@@ -8,7 +8,9 @@ const Experience  = (props) => (
                 <img src={props.employer.logo} alt={props.employer.name}/>
             </a>
             <div>
+            <a href={props.employer.link} target="_blank" rel="noopener noreferrer">
                 <h4>{props.title} @ {props.employer.name}</h4>
+                </a>
                 <h5>{props.startingDate} - {props.finishingDate}</h5>
             </div>
         </div>

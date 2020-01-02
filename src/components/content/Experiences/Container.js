@@ -6,6 +6,7 @@ import Education from './Education';
 import bell from './../../../assets/bell.png'
 import freezingraccoon from './../../../assets/freezingraccoon.png'
 import ericsson from './../../../assets/ericsson.png'
+import leadhouse from './../../../assets/leadhouse.jpg'
 
 import esg from './../../../assets/esg.jpg'
 import concordia from './../../../assets/concordia.jpg'
@@ -13,14 +14,28 @@ import concordia from './../../../assets/concordia.jpg'
 const experience = [
     {
         id:0,
-        title: "Software developper intern",
+        title: "Software Developper",
+        employer: {
+            name:"Leadhouse", 
+            logo: leadhouse,
+            link:"https://leadhouse.ca/",
+        },
+        startingDate: "September 2019",
+        finishingDate: "Present",
+        content:
+            " Within a small team, we develop websites and apps designed specifically" +
+            " to convert conjointly with marketing campaigns"
+    },
+    {
+        id:1,
+        title: "Software Developper Intern",
         employer: {
             name:"Ericsson", 
             logo: ericsson,
             link:"https://www.ericsson.com/",
         },
         startingDate: "September 2018",
-        finishingDate: "April 2019",
+        finishingDate: "August 2019",
         content:
             "I learned a lot during my internship @ Ericsson." +
             " Within a team of four people, we modernized an internal tool " +
@@ -28,7 +43,7 @@ const experience = [
             " It was an incredible experience."
     },
     {
-        id:1,
+        id:2,
         title: "Dev Wizard",
         employer: {
             name:"Freezing Raccoon", 
@@ -43,7 +58,7 @@ const experience = [
             " up, fashioning everything from the home page to site layout and function." + 
             " On the side, I optimize Freezing Raccoon's delivery pipeline."
     },{
-        id:2,
+        id:3,
         title:"Sales Consultant",
         employer:{
             name:"Bell Canada Entreprises", 

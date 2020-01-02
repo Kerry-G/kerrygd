@@ -6,9 +6,21 @@ import montrealGo from '../../../assets/montrealGo.png'
 import askEng from '../../../assets/ask-eng.png'
 import home from '../../../assets/home.png'
 import jamkis from '../../../assets/jamkis.png'
+import unity from '../../../assets/unity.png'
 
 //JSON of project to render
-const project = [
+const games = [
+    {
+        id:5,
+        title: "Safeguard The Realm!",
+        href:"youtube.com/watch?v=cK3jCJUFKtU",
+        logo:unity,
+        alt:"safeguard-the-realm",
+        content:
+           "Tower defence meets auto-battler! A Game made in a team of 6 marvellous people " +
+           " within Concordia's Game Development course. My focus on the development were the towers and " +
+           " their interactions."
+    },
     {
         id:0,
         title: "HOME",
@@ -34,20 +46,6 @@ const project = [
             " This high pace, fast action shooter is perfect for casual local multiplayer with your friends!",
     },
     {
-        id:2,
-        title: "Montreal Go",
-        href:"https://github.com/Kerry-G/MontrealGo",
-        logo:montrealGo,
-        alt:"MontrealGo",
-        content:
-            "An informative bot for messenger that gives insight on Montreal." +
-            " MontrealGo was made in a week-end for Hackatown 2017." +
-            " It was an interesting project since we had to get familiar" +
-            " with several APIs quickly to get it running." +
-            " I personally think that Messenger is an incredible platform" +
-            " for business and it is not used enough.",
-    },
-    {
         id:3,
         title: "Self Care",
         href:"https://jamkis.itch.io/selfcare",
@@ -59,22 +57,48 @@ const project = [
             " Ideally the game would be linked to twitch and the amount of spectators would increase the amount of enemies, increase the rhythm and the pressure on the player." + 
             " The more spectators, the bigger potential for a High Score!",
     },
-    {
-        id:4,
-        title: "Ask-Eng",
-        href:"https://github.com/Kerry-G/Ask-Eng",
-        logo:askEng,
-        alt:"Ask-Eng",
-        content:
-            "An engineering question and answer board." +
-            " This project was done in a semester with a team of 8 marvelous people." +
-            " I acted as the lead front-end developer, " +
-            "and it was particularly challenging since I had to teach React " +
-            "to the other front-end developers.    "
-    },
 ];
+const projects = [{
+    id:2,
+    title: "Montreal Go",
+    href:"https://github.com/Kerry-G/MontrealGo",
+    logo:montrealGo,
+    alt:"MontrealGo",
+    content:
+        "An informative bot for messenger that gives insight on Montreal." +
+        " MontrealGo was made in a week-end for Hackatown 2017." +
+        " It was an interesting project since we had to get familiar" +
+        " with several APIs quickly to get it running." +
+        " I personally think that Messenger is an incredible platform" +
+        " for business and it is not used enough.",
+},
+{
+    id:4,
+    title: "Ask-Eng",
+    href:"https://github.com/Kerry-G/Ask-Eng",
+    logo:askEng,
+    alt:"Ask-Eng",
+    content:
+        "An engineering question and answer board." +
+        " This project was done in a semester with a team of 8." +
+        " I acted as the lead front-end developer, " +
+        "and it was particularly challenging since I had to teach React " +
+        "to the other front-end developers.    "
+}]
 
-const projectItem = project.map((project) =>
+
+const projectItem = projects.map((project) =>
+        <Project
+            key={project.id}
+            title={project.title}
+            href={project.href}
+            logo={project.logo}
+            alt={project.alt}
+            content={project.content}
+    />
+);
+
+const gamesItems = games.map((project) =>
         <Project
             key={project.id}
             title={project.title}
@@ -87,7 +111,9 @@ const projectItem = project.map((project) =>
 
 const Projects  = () => (
     <div className="App-content">
-        <h2>Projects</h2>
+        <h2>Games</h2>
+        {gamesItems}
+        <h2>General Projects</h2>
         {projectItem}
     </div>
 );
