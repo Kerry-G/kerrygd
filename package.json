@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://kerry-g.github.io/",
   "dependencies": {
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.13.1",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-scripts": "^2.1.3"
