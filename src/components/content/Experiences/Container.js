@@ -16,12 +16,24 @@ const experience = [
         id:0,
         title: "Software Developper",
         employer: {
+            name:"Ericsson",
+            logo: ericsson,
+            link:"https://www.ericsson.com/",
+        },
+        startingDate: "August 2020",
+        finishingDate: "Present",
+        content: ""
+    },
+    {
+        id:0,
+        title: "Software Developper",
+        employer: {
             name:"Leadhouse", 
             logo: leadhouse,
             link:"https://leadhouse.ca/",
         },
         startingDate: "September 2019",
-        finishingDate: "Present",
+        finishingDate: "August 2020",
         content:
             " Within a small team, we develop websites and apps designed specifically" +
             " to convert conjointly with marketing campaigns"
@@ -38,7 +50,7 @@ const experience = [
         finishingDate: "August 2019",
         content:
             "I learned a lot during my internship @ Ericsson." +
-            " Within a team of four people, we modernized an internal tool " +
+            " We modernized an internal tool " +
             " using newer technologies like Java 8, Docker, Kubernetes, Reactjs. " + 
             " It was an incredible experience."
     },
@@ -48,15 +60,14 @@ const experience = [
         employer: {
             name:"Freezing Raccoon", 
             logo: freezingraccoon,
-            link:"https://www.theforgearena.com/",
+            link:"https://www.youtube.com/watch?v=Z8-jr0ViXTg",
         },
         startingDate: "May 2017",
         finishingDate: "September 2018",
         content:
-            "My main role at Freezing Raccoon is to develop web applications for the studio." +
-            " My responsibilities include building applications from the bottom" +
-            " up, fashioning everything from the home page to site layout and function." + 
-            " On the side, I optimize Freezing Raccoon's delivery pipeline."
+            " This is my first software developer gig. I created cloud applications for the studio." +
+            " My responsibilities included building applications from the bottom" +
+            " up, fashioning everything from the home page to site layout and function."
     },{
         id:3,
         title:"Sales Consultant",
@@ -68,10 +79,7 @@ const experience = [
         startingDate:"May 2012",
         finishingDate:"May 2017",
         content:
-            "As a sales consultant, my role was to meet and exceed monthly sales target as"+
-            " well as exceed customers’ expectations, learn and understand the products,"+
-            " services and promotional offerings, and act as an ambassador by professionally"+
-            " representing the brand. This was my student job for a long time, and I am" +
+            "This was my student job for a long time, and I am" +
             " grateful because I learned a lot about management and business culture in my 5 years with Bell."
     }
 ];
@@ -90,14 +98,14 @@ const experienceItem = experience.map((experience) =>
 const education = [
     {
         id:1,
-        degree:"Computer Games",
+        degree:"Computer Science with Distinction - Computer Games",
         school: {
             name: "Concordia University",
             logo: concordia,
             link: "http://www.concordia.ca/academics/undergraduate/computer-games.html"
         },
         startingDate: "2016",
-        finishingDate: "Present",
+        finishingDate: "2020",
         content:
             "Study the life cycle of software products from specification through analysis and"+
             " design, to testing maintenance and evaluation. Learn to balance large-scale"+
