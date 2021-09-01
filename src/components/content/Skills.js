@@ -5,6 +5,8 @@ import Python from './../../assets/python.png'
 import HTML from './../../assets/html.png'
 import CSS3 from './../../assets/css.png'
 import Javascript from './../../assets/js.png'
+import cpp from './../../assets/cpp.png'
+import csharp from './../../assets/csharp.png'
 import digitalOcean from './../../assets/do.png'
 import firebase from './../../assets/firebase.png'
 import git from './../../assets/git.png'
@@ -17,6 +19,7 @@ import nginx from './../../assets/nginx.png'
 import jest from './../../assets/jest.png'
 import ubuntu from './../../assets/ubuntu.png'
 import vs_code from './../../assets/vs_code.png'
+import unity from './../../assets/unity.png'
 
 const Skills  = () => (
     <div className="App-content">
@@ -27,6 +30,9 @@ const Skills  = () => (
             <a href="https://www.w3.org/html/" target="_blank" rel="noopener noreferrer"><img src={HTML} alt="HTML"/></a>
             <a href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener noreferrer"><img src={CSS3} alt="CSS"/></a>
             <a href="https://www.javascript.com/" target="_blank" rel="noopener noreferrer"><img src={Javascript} alt="Javascript"/></a>
+            <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/" target="_blank" rel="noopener noreferrer"><img src={csharp} alt="Csharp"/></a>
+            <a href="https://isocpp.org/" target="_blank" rel="noopener noreferrer"><img src={cpp} alt="cpp"/></a>
+            
         </div>    
         <h2>Tools</h2>
         <div className="skill-logo-set">
@@ -37,6 +43,7 @@ const Skills  = () => (
             <a href="https://www.digitalocean.com" target="_blank" rel="noopener noreferrer"> <img src={digitalOcean} alt="Digital Ocean"/></a>
             <a href="http://sass-lang.com" target="_blank" rel="noopener noreferrer"> <img src={sass} alt="Sass"/></a>
             <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer"> <img src={git} alt="Git"/></a>
+            <a href="https://unity.com/" target="_blank" rel="noopener noreferrer"> <img src={unity} alt="Unity"/></a>
             <a href="http://flask.pocoo.org" target="_blank" rel="noopener noreferrer"> <img src={flask} alt="Flask"/></a>
             <a href="http://nginx.org" target="_blank" rel="noopener noreferrer"> <img src={nginx} alt="nginx"/></a>
             <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer"> <img src={jest} alt="Jest"/></a>
